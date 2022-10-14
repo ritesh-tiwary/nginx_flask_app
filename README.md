@@ -24,3 +24,22 @@ To run the sample:
 ![](hello_app/static/images/debug-flask-app.png?raw=true "debug-flask-app")
 
 * For steps on running this app in a VS Code Docker container, see [Python in containers](https://code.visualstudio.com/docs/containers/quickstart-python) on the VS Code Docs website.
+
+* Command:
+    - git clone https://github.com/ritesh-tiwary/nginx_flask_app.git
+    - cd nginx_flask_app
+    - git status
+    - git remote -v
+    - git add .
+    - git status
+    - git commit -m "Initial commit"
+    - git log
+    - git push -u origin main
+
+
+    - docker build -t flask.app .
+    - docker run -d -p 5000:5000 flask.app:latest
+
+    - docker compose -p flask_app -f docker-compose.yml up -d --build --scale flask.app=3
+    - docker compose -p flask_app logs
+
